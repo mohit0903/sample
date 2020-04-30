@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Bulb animation</title>
+</head>
+<body>
+<img src="bulb1.gif" id="bulb">
+<br/>
+<button type="button" onclick="func(1)">On</button>
+<br/>
+<button type="button" onclick="func(0)">Off</button>
+<script>
+
+function func(d)
+{
+var pic;
+if(d==1)
+	pic="bulb2.gif";
+else
+	pic="bulb1.gif";
+
+document.getElementById("bulb").src=pic;
+}
+
+</script>
+</body>
+</html>
